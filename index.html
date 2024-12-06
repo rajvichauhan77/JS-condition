@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password change</title>
+</head>
+<body>
+    
+    <h1>Change Password</h1>
+    <br><br>
+
+    <label for="">Old Password</label>
+    <input type="number" name="" id="old">
+    <br><br>
+
+    <label for="">New Password</label>
+    <input type="number" id="neww">
+    <br><br>
+
+    <label for="">Confirm new password</label>
+    <input type="number" id="confirm">
+    <br><br>
+
+    <button id="btn">Confirm</button>
+    <p id="click"></p>
+
+
+</body>
+
+    <script>
+
+        document.getElementById("btn").onclick = function(){
+
+            let old = document.getElementById("old").value
+            let neww = document.getElementById("neww").value
+            let confirm = document.getElementById("confirm").value
+
+            
+
+            if(neww == confirm){
+                alert("Your password is changed")
+            }
+            else if(old == neww){
+                alert("You enter same password")
+            }
+            else{
+                alert("Enter valid password")
+            }
+
+        }
+
+    </script>
+
+
+</html>
